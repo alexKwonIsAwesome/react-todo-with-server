@@ -1,3 +1,5 @@
+import firebase, {firebaseRef} from 'app/firebase/';
+
 export var setSearchText = (searchText) => {
   return {
     type: 'SET_SEARCH_TEXT',
@@ -15,6 +17,12 @@ export var addTodo = (text) => {
   return {
     type: 'ADD_TODO',
     text
+  };
+};
+
+export var startAddTodo = (text) => {
+  return (dispatch, getState) => {
+    
   };
 };
 
